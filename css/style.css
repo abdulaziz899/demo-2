@@ -16,14 +16,14 @@
     font-size: 25px;
 }
 #activeHome{
-    background-color: #002129;
+    background-color: #e5eeee;
     cursor: pointer;
-    color: #14a800;
+    color: #67a6a6;
 }
 
 .fontContainer:hover{
-    background-color: #002129;
-    color: #14a800;
+    background-color: #e5eeee;
+    color: #67a6a6;
 }
 .fontContainer:hover .CRMPage{
     display: block;
@@ -80,13 +80,12 @@
 }
 
 .CRMPage li:hover,.emailPage li:hover,.helpPage li:hover, .authPage li:hover, .settingPage li:hover{
-    background-color: #002129;
+    background-color: #e5eeee;
     border-radius: 0px 30px;
-    color: #14a800;
+    
 }
 .CRMPage li a:hover,.emailPage li a:hover,.helpPage li a:hover, .authPage li:hover a, .settingPage li a:hover{
-    
-    color: #14a800;
+    color: #67a6a6;
 }
 .searchIcon i{
     margin-left: -50px;
@@ -110,10 +109,10 @@
 }
 .navBarIcon a{
     text-decoration: none;
-    color: white;
+    color: #278282;
 }
 .navBarIcon a:hover i{
-    color: #14a800;
+    color: #168c99;
 }
 .navBarIcon img{
     width: 50px;
