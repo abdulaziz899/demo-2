@@ -1,24 +1,28 @@
 .fontContainer{
-    width: 60px ;
-    height: 50px;
-    margin:2px;
+    width: 80px ;
+    height: 70px;
+    margin-left:10px;
+    margin-top: 5px;
     padding: 10px;
     text-align: center;
     color: #758a8d;
     border-radius: 7px;
+}
+.fontContainer small{
+    font-size: 12px;
 }
 
 .fontContainer i{
     font-size: 25px;
 }
 #activeHome{
-    background-color: #e5eeee;
+    background-color: #002129;
     cursor: pointer;
     color: #14a800;
 }
 
 .fontContainer:hover{
-    background-color: #e5eeee;
+    background-color: #002129;
     color: #14a800;
 }
 .fontContainer:hover .CRMPage{
@@ -46,19 +50,19 @@
     height: 260px;
     background-color: white;
     border: .5px solid #d6d9da;
-    margin-left: 80px;
+    margin-left: 70px;
     display: none;
     transition: 0.5s ease-in-out;
     text-align: left;
 }
 .CRMPage,.emailPage,.helpPage{
-    margin-top: -55px;
+    margin-top: -60px;
 }
 .authPage{
-    margin-top: -115px;
+    margin-top: -205px;
 }
 .settingPage{
-    margin-top: -200px;
+    margin-top: -250px;
 }
 .CRMPage li,.emailPage li,.helpPage li, .authPage li, .settingPage li{
     list-style: none;
@@ -76,12 +80,42 @@
 }
 
 .CRMPage li:hover,.emailPage li:hover,.helpPage li:hover, .authPage li:hover, .settingPage li:hover{
-    background-color: #e5eeee;
+    background-color: #002129;
+    border-radius: 0px 30px;
+    color: #14a800;
+}
+.CRMPage li a:hover,.emailPage li a:hover,.helpPage li a:hover, .authPage li:hover a, .settingPage li a:hover{
+    
     color: #14a800;
 }
 .searchIcon i{
-    margin-left: -30px;
+    margin-left: -50px;
+    font-size: 30px;
+    margin-top: 7px;
 }
-.searchIcon input{
-    width: 100%;
+ .logoControl{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+ }
+ .navBarIcon {
+     width: 25%;
+     text-align: end;
+     justify-content: end;
+ }
+ .navBarIcon i{
+     padding: 10px;
+     font-size: 30px;
+}
+.navBarIcon a{
+    text-decoration: none;
+    color: white;
+}
+.navBarIcon a:hover i{
+    color: #14a800;
+}
+.navBarIcon img{
+    width: 50px;
+    height: 50px;
+    border-radius: 580%;
 }
