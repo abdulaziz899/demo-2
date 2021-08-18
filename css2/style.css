@@ -2605,7 +2605,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
   background-color: #fff;
   top: 0;
   position: relative;
-  margin: -20px 10px 27px 150px;
+  margin: -20px 10px 27px 70px;
   border-radius: 7px;
 }
 

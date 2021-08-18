@@ -5,3 +5,16 @@ miniNavBar.forEach(element => {
         this.classList.add("active")
     })
 });
+const graph=document.getElementById("graph");
+const events=document.getElementById("event");
+const eventClick=()=>{
+    graph.style.display="none"
+    events.style.display="block"
+    console.log("click me");
+}
+const graphClick=()=>{
+    graph.style.display="block"
+    events.style.display="none"
+    console.log("click me");
+}
+

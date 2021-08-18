@@ -117,6 +117,7 @@
 .navBarIcon img{
     width: 120px;
     height: 80px;
+    margin-left: -30px;
     border-radius: 50%;
 }
 @media(max-width:700px){
@@ -129,7 +130,6 @@
 
 .navControl{
     margin-top: -500px;
-    margin-left: 400px;
 }
 .miniNavBar {
     width: 100%;
@@ -155,5 +155,7 @@
 }
 .grapSection{
     margin-left: 150px;
-    z-index: -1;
+}
+#graph{
+    display: none;
 }
