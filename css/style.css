@@ -115,8 +115,45 @@
     color: #168c99;
 }
 .navBarIcon img{
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 80px;
     border-radius: 50%;
-    margin-left: 10px;
+}
+@media(max-width:700px){
+    .navBarIcon img{
+        width: 70px;
+        height: 50px;
+    }
+    
+}
+
+.navControl{
+    margin-top: -500px;
+    margin-left: 400px;
+}
+.miniNavBar {
+    width: 100%;
+    height: 50px;
+    margin-top: -10px;
+    line-height: 50px;
+}
+.miniNavBar ul{
+    display: flex;
+    
+}
+.miniNavBar ul li{
+    list-style: none;
+}
+.miniNavBar ul li a{
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #758a8d;
+    font-size: 19px;
+}
+.miniNavBar ul li a.active{
+    border-bottom: 2px solid #3eb8b8;
+}
+.grapSection{
+    margin-left: 150px;
+    z-index: -1;
 }
