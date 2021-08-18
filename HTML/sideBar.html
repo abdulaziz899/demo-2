@@ -6,81 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css2/style.css">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="../css2/style.css" />
+    <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body class="crm_body_bg">
-    
-    <div class="pt-3">
-        <div id="activeHome" class="fontContainer">
-            <i class="fas fa-home"></i> <br> <small>Home</small>
-        </div>
-        <div class="fontContainer">
-            <i class="far fa-user-circle"> </i> <br> <small>CRM</small>
-            <!-- show another page -->
-            <ul class="CRMPage">
-                <li><a href="#">people</a></li>
-                <li><a href="#">account</a></li>
-                <li><a href="#">deals</a></li>
-                <li><a href="#">engagement</a></li>
-                <li><a href="#">segments</a></li>
-            </ul>
-        </div>
-        <div class="fontContainer">
-            <i class="far fa-envelope"></i> <br> <small>Email</small>
-            <!-- show another page -->
-            <ul class="emailPage">
-                <li><a href="#">people</a></li>
-                <li><a href="#">account</a></li>
-                <li><a href="#">deals</a></li>
-                <li><a href="#">engagement</a></li>
-                <li><a href="#">segments</a></li>
-            </ul>
-        </div>
-        <div class="fontContainer">
-            <i class="fas fa-hands-helping"></i> <br> <small>Help Desk</small>
-            <!-- show another page -->
-            <ul class="helpPage">
-                <li><a href="#">people</a></li>
-                <li><a href="#">account</a></li>
-                <li><a href="#">deals</a></li>
-                <li><a href="#">engagement</a></li>
-                <li><a href="#">segments</a></li>
-            </ul>
-        </div>
-        <div class="fontContainer">
-            <i class="fas fa-money-check-alt"></i> <br> <small>Billing</small>
-            <!-- show another page -->
-            <ul class="CRMPage">
-                <li><a href="#">people</a></li>
-                <li><a href="#">account</a></li>
-                <li><a href="#">deals</a></li>
-                <li><a href="#">engagement</a></li>
-                <li><a href="#">segments</a></li>
-            </ul>
-        </div>
-        <div class="fontContainer">
-            <i class="fas fa-sign-in-alt"></i> <br> <small>Auth</small>
-            <!-- show another page -->
-            <ul class="authPage">
-                <li><a href="#">people</a></li>
-                <li><a href="#">account</a></li>
-                <li><a href="#">deals</a></li>
-                <li><a href="#">engagement</a></li>
-                <li><a href="#">segments</a></li>
-            </ul>
-        </div>
-        <div class="fontContainer">
-            <i class="fas fa-cog"></i> <small>setting</small>
-            <!-- show another page -->
-            <ul class="settingPage">
-                <li><a href="#">people</a></li>
-                <li><a href="#">account</a></li>
-                <li><a href="#">deals</a></li>
-                <li><a href="#">engagement</a></li>
-                <li><a href="#">segments</a></li>
-            </ul>
-        </div>
+    <div style="width: 250px; " class="">
+        <div>
+            <div id="openDisplay">
+                <a  class="text-decoration-none, color-white" href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div id="closeDisplay">
+                <a  class="close text-decoration-none, color-white" onclick="closedSlider()" href="#">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        <section id="menus">
+            <div class="navBarIcon">
+                <img src="../img/logo.jpg" alt="">
+            </div>
+            
+            <div id="activeHome" class="fontContainer">
+                <i class="fas fa-home"></i> <br> <small>Home</small>
+            </div>
+            <div class="fontContainer">
+                <i class="far fa-user-circle"> </i> <br> <small>CRM</small>
+                <!-- show another page -->
+                <ul class="CRMPage">
+                    <li><a href="#">people</a></li>
+                    <li><a href="#">account</a></li>
+                    <li><a href="#">deals</a></li>
+                    <li><a href="#">engagement</a></li>
+                    <li><a href="#">segments</a></li>
+                </ul>
+            </div>
+            <div class="fontContainer">
+                <i class="far fa-envelope"></i> <br> <small>Email</small>
+                <!-- show another page -->
+                <ul class="emailPage">
+                    <li><a href="#">people</a></li>
+                    <li><a href="#">account</a></li>
+                    <li><a href="#">deals</a></li>
+                    <li><a href="#">engagement</a></li>
+                    <li><a href="#">segments</a></li>
+                </ul>
+            </div>
+            <div class="fontContainer">
+                <i class="fas fa-hands-helping"></i> <br> <small>Help Desk</small>
+                <!-- show another page -->
+                <ul class="helpPage">
+                    <li><a href="#">people</a></li>
+                    <li><a href="#">account</a></li>
+                    <li><a href="#">deals</a></li>
+                    <li><a href="#">engagement</a></li>
+                    <li><a href="#">segments</a></li>
+                </ul>
+            </div>
+            <div class="fontContainer">
+                <i class="fas fa-money-check-alt"></i> <br> <small>Billing</small>
+                <!-- show another page -->
+                <ul class="CRMPage">
+                    <li><a href="#">people</a></li>
+                    <li><a href="#">account</a></li>
+                    <li><a href="#">deals</a></li>
+                    <li><a href="#">engagement</a></li>
+                    <li><a href="#">segments</a></li>
+                </ul>
+            </div>
+            <div class="fontContainer">
+                <i class="fas fa-sign-in-alt"></i> <br> <small>Auth</small>
+                <!-- show another page -->
+                <ul class="authPage">
+                    <li><a href="#">people</a></li>
+                    <li><a href="#">account</a></li>
+                    <li><a href="#">deals</a></li>
+                    <li><a href="#">engagement</a></li>
+                    <li><a href="#">segments</a></li>
+                </ul>
+            </div>
+            <div class="fontContainer">
+                <i class="fas fa-cog"></i> <small>setting</small>
+                <!-- show another page -->
+                <ul class="settingPage">
+                    <li><a href="#">people</a></li>
+                    <li><a href="#">account</a></li>
+                    <li><a href="#">deals</a></li>
+                    <li><a href="#">engagement</a></li>
+                    <li><a href="#">segments</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
     </div>
 
             <!-- menu  -->
@@ -134,7 +154,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         aziz
-                    </div>
+                       </div>
                     <div class="col-lg-4">
                         <div class="miniNavBar">
                             <ul>
@@ -147,7 +167,7 @@
                                 aa
                             </div>
                             <div id="graph">
-                                aab
+
                             </div>
                         </div>
                      </div>
@@ -159,6 +179,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../index.js"></script>
+
     
 </body>
 </html>

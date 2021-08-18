@@ -1,8 +1,8 @@
 .fontContainer{
     width: 80px ;
     height: 70px;
-    margin-left:10px;
-    margin-top: 5px;
+    margin-left:40px;
+    margin-top: 10px;
     padding: 10px;
     text-align: center;
     color: #758a8d;
@@ -98,38 +98,19 @@
      height: 50px;
      border-radius: 50%;
  }
- .navBarIcon {
-     width: 25%;
-     text-align: end;
-     justify-content: end;
- }
- .navBarIcon i{
-     padding: 5px 20px;
-     font-size: 30px;
-}
-.navBarIcon a{
-    text-decoration: none;
-    color: #278282;
-}
-.navBarIcon a:hover i{
-    color: #168c99;
+.navBarIcon{
+    text-align: center;
 }
 .navBarIcon img{
-    width: 120px;
-    height: 80px;
-    margin-left: -30px;
-    border-radius: 50%;
-}
-@media(max-width:700px){
-    .navBarIcon img{
-        width: 70px;
-        height: 50px;
-    }
-    
+    width: 130px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 .navControl{
-    margin-top: -500px;
+   position: relative;
 }
 .miniNavBar {
     width: 100%;
@@ -158,4 +139,48 @@
 }
 #graph{
     display: none;
+}
+#openDisplay,#closeDisplay{
+    margin-top: 20px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    color: #758a8d;
+}
+#closeDisplay{
+    margin-left: 30px;
+}
+#openDisplay{
+    margin-left: 10px;
+}
+#openDisplay a,#closeDisplay a{
+    color: #758a8d;
+    font-size: 20px;
+}
+#menus{
+    position: absolute;
+}
+@media(min-width:1100px){
+    #openDisplay{
+        display: none;
+    }
+    #menus{
+        display: block;
+    }
+}
+@media(max-width:700px){
+    #openDisplay{
+        display: block;
+        margin-left: 30px;
+    }
+    #menus{
+        display: none;
+    }
+    .fontContainer{
+        margin-left:10px;
+    }
+    .navBarIcon img{
+        margin-top: 80px;
+        margin-left: 10px;
+    }
 }

@@ -17,4 +17,17 @@ const graphClick=()=>{
     events.style.display="none"
     console.log("click me");
 }
+const openMenu=document.getElementById("menus")
+const openDisplay=document.getElementById("openDisplay")
+const closeDisplay=document.getElementById("closeDisplay")
+const openSlideMenu=()=>{
+    openDisplay.style.display="none"
+    closeDisplay.style.display="block"
+    openMenu.style.display="block"
+}
 
+const closedSlider=()=>{
+    openDisplay.style.display="block"
+    closeDisplay.style.display="none"
+    openMenu.style.display="none"
+}
